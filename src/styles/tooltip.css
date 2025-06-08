@@ -1,0 +1,24 @@
+.tooltip {
+  background: rgba(255, 255, 255, 1);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 2px 8px rgba(106, 41, 123, 0.25);
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+.tooltip-label {
+  color: #9E4CAA;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.tooltip-value {
+  color: black;
+  font-weight: 400;
+}
