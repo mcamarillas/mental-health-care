@@ -13,9 +13,11 @@ function OverviewPage({data}) {
         <div className="vertical-layout">
           <div className="horizontal-layout inner-layout">
             <div className="content-box">
+              <h3 className="chart-title">Depression Rates</h3>
               <PieChart rawData={data['depression-rates']} />
             </div>
             <div className="content-box">
+              <h3 className="chart-title">Suicidal Thoughts Rates</h3>
               <PieChart rawData={data['suicidal-thougths-rates']} />
             </div>
           </div>

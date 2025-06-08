@@ -87,3 +87,9 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+.chart-title {
+  padding: 0rem;
+  margin: 0rem;
+  color: #9E4CAA;
+}
