@@ -1,11 +1,11 @@
 {
     "depression-rates": {
-        "Positius": "16336",
-        "Negatius": "11565"
+        "Positius": "16319",
+        "Negatius": "11552"
     },
     "suicidal-thougths-rates": {
-        "Positius": "17656",
-        "Negatius": "10245"
+        "Positius": "17635",
+        "Negatius": "10236"
     },
     "city-depression": {
         "Kalyan": { "Positiu": "934", "Negatiu": "636", "coordinates": ["72.9781", "19.2403"] },
@@ -38,5 +38,183 @@
         "Kanpur": { "Positiu": "330", "Negatiu": "279", "coordinates": ["80.3319", "26.4499"] },
         "Nashik": { "Positiu": "289", "Negatiu": "258", "coordinates": ["73.7898", "19.9975"] },
         "Faridabad": { "Positiu": "271", "Negatiu": "190", "coordinates": ["77.3178", "28.4089"] }
-    }
+    },
+    "sankey-depression1": {
+        "nodes": [
+            {
+                "name": "Healthy"
+            },
+            {
+                "name": "Moderate"
+            },
+            {
+                "name": "Unhealthy"
+            },
+            {
+                "name": "Suicidal Thoughts"
+            },
+            {
+                "name": "NO Sucidal Thoughts"
+            },
+            {
+                "name": "Depression"
+            },
+            {
+                "name": "NO Depression"
+            }
+        ],
+        "links": [
+            {
+                "source": 0,
+                "target": 4,
+                "value": 3356
+            },
+            {
+                "source": 0,
+                "target": 3,
+                "value": 4285
+            },
+            {
+                "source": 1,
+                "target": 4,
+                "value": 3745
+            },
+            {
+                "source": 1,
+                "target": 3,
+                "value": 6163
+            },
+            {
+                "source": 2,
+                "target": 4,
+                "value": 3125
+            },
+            {
+                "source": 2,
+                "target": 3,
+                "value": 7171
+            },
+            {
+                "source": 4,
+                "target": 6,
+                "value": 7852
+            },
+            {
+                "source": 4,
+                "target": 5,
+                "value": 2374
+            },
+            {
+                "source": 3,
+                "target": 6,
+                "value": 3689
+            },
+            {
+                "source": 3,
+                "target": 5,
+                "value": 13930
+            }
+        ]
+    },
+    "sankey-depression2": {
+        "nodes": [
+            { "name": "More than 8 hours" },
+            { "name": "7-8 hours" },
+            { "name": "5-6 hours" },
+            { "name": "Less than 5 hours" },
+            { "name": "Suicidal Thoughts" },
+            { "name": "NO Sucidal Thoughts" },
+            { "name": "Depression" },
+            { "name": "NO Depression" }
+        ],
+        "links": [
+            { "source": 2, "target": 5, "value": 2344 },
+            { "source": 2, "target": 4, "value": 3830 },
+            { "source": 1, "target": 5, "value": 2567 },
+            { "source": 1, "target": 4, "value": 4766 },
+            { "source": 3, "target": 5, "value": 2766 },
+            { "source": 3, "target": 4, "value": 5532 },
+            { "source": 0, "target": 5, "value": 2549 },
+            { "source": 0, "target": 4, "value": 3491 },
+
+            { "source": 5, "target": 6, "value": 2374 },
+            { "source": 5, "target": 7, "value": 7852 },
+            { "source": 4, "target": 7, "value": 3689 },
+            { "source": 4, "target": 6, "value": 13930 }
+        ]
+    },
+    "mossaic1": [
+        {
+            "category": "Healthy",
+            "subcategory": 0,
+            "value": 4173
+        },
+        {
+            "category": "Healthy",
+            "subcategory": 1,
+            "value": 3468
+        },
+        {
+            "category": "Moderate",
+            "subcategory": 0,
+            "value": 4356
+        },
+        {
+            "category": "Moderate",
+            "subcategory": 1,
+            "value": 5552
+        },
+        {
+            "category": "Unhealthy",
+            "subcategory": 0,
+            "value": 3012
+        },
+        {
+            "category": "Unhealthy",
+            "subcategory": 1,
+            "value": 7284
+        }
+    ],
+    "mossaic2": [
+        {
+            "category": "'Less than 5 hours'",
+            "subcategory": 0,
+            "value": 2944
+        },
+        {
+            "category": "'Less than 5 hours'",
+            "subcategory": 1,
+            "value": 5354
+        },
+        {
+            "category": "'5-6 hours'",
+            "subcategory": 0,
+            "value": 2664
+        },
+        {
+            "category": "'5-6 hours'",
+            "subcategory": 1,
+            "value": 3510
+        },
+        {
+            "category": "'7-8 hours'",
+            "subcategory": 0,
+            "value": 2968
+        },
+        {
+            "category": "'7-8 hours'",
+            "subcategory": 1,
+            "value": 4365
+        },
+        {
+            "category": "'More than 8 hours'",
+            "subcategory": 0,
+            "value": 2965
+        },
+        {
+            "category": "'More than 8 hours'",
+            "subcategory": 1,
+            "value": 3075
+        }
+    ]
 }
