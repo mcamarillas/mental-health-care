@@ -13,7 +13,10 @@ function Tooltip({ visible, x, y, label, value }) {
       }}
     >
       <span className="tooltip-label">{label}</span>
-      <span className="tooltip-value">{value}</span>
+      <span
+        className="tooltip-value"
+        dangerouslySetInnerHTML={{ __html: value }}
+      />
     </div>
   );
 }

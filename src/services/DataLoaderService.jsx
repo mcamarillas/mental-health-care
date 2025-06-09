@@ -25,7 +25,7 @@ function loadJSON(storageKey, setData, onDataLoaded) {
     let jsonPath;
     switch (storageKey) {
       case 'bookingData':
-        jsonPath = (DEV ? '' : '/House-Booking-Visualization') + '/data/hotel_bookings.json';
+        jsonPath = (DEV ? '' : '/mental-health-care') + '/data/mental-health-data.json';
         break;
       default:
         console.error(`Error: No hi ha fitxer per a la clau: ${storageKey}`);

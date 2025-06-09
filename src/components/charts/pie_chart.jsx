@@ -35,6 +35,7 @@ function PieChart({ rawData }) {
       .style('stroke-width', '2px')
       .on('mouseover', function(event, d) {
         d3.select(this).transition().duration(200).attr('d', arcHover);
+        d3.select(this).attr('opacity', 0.7);
         const [x, y] = d3.pointer(event, container);
         setTooltip({
           visible: true,
@@ -54,6 +55,7 @@ function PieChart({ rawData }) {
       })
       .on('mouseout', function() {
         d3.select(this).transition().duration(200).attr('d', arc);
+        d3.select(this).attr('opacity', 1);
         setTooltip(t => ({ ...t, visible: false }));
       });
 
