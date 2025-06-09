@@ -3,7 +3,7 @@ import DropdownMenu from '../components/dropdown_component';
 import PieChart from '../components/charts/pie_chart';
 import HorizontalBarChart from '../components/charts/horizontal_bar_chart';
 import IndiaMap from '../components/charts/india_map';
-const DEV = true;
+const DEV = false;
 
 function OverviewPage({data}) {
   return (

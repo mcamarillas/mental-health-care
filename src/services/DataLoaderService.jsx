@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const REFRESH_DATA = true;
-const DEV = true;
+const DEV = false;
 export default function CSVDataLoader({storageKey, onDataLoaded}) {
   const [data, setData] = useState(null);
 
