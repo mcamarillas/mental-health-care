@@ -12,7 +12,6 @@ function SankeyChart({ data }) {
     const width = container.clientWidth;
     const height = container.clientHeight;
 
-    // 🔸 Definim marges
     const margin = { top: 20, right: 40, bottom: 20, left: 40 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
@@ -70,7 +69,6 @@ function SankeyChart({ data }) {
       })
       .on('mouseout', () => setTooltip(t => ({ ...t, visible: false })));
 
-    // 🔷 Links
     g.append('g')
       .attr('fill', 'none')
       .attr('stroke-opacity', 0.4)
@@ -96,7 +94,6 @@ function SankeyChart({ data }) {
       })
       .on('mouseout', () => setTooltip(t => ({ ...t, visible: false })));
 
-    // 🔷 Labels
     g.append('g')
       .style('font', '12px sans-serif')
       .selectAll('text')

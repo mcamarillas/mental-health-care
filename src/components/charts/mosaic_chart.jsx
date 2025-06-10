@@ -14,8 +14,8 @@ function MosaicChart({ data }) {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
-    const paddingX = 4; // separació horitzontal entre columnes
-    const paddingY = 2; // separació vertical entre rectangles
+    const paddingX = 4;
+    const paddingY = 2;
 
     d3.select(container).select('svg').remove();
 
@@ -29,7 +29,7 @@ function MosaicChart({ data }) {
     const g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
-    // Eix Y: línia vertical i etiquetes
+    
     g.append('line')
       .attr('x1', -5)
       .attr('y1', -15)
@@ -58,7 +58,6 @@ function MosaicChart({ data }) {
       .attr('transform', 'rotate(-90)')
       .text('Depressió');
 
-    // Agrupem per categoria principal
     const categoryTotals = d3.rollups(
       data,
       v => d3.sum(v, d => d.value),
@@ -69,7 +68,7 @@ function MosaicChart({ data }) {
 
     let xOffset = 0;
 
-    // Escala de colors per categoria (per columna)
+    
     const colors = d3.scaleOrdinal()
       .domain(categoryTotals.map(d => d[0]))
       .range(['#6A297B', '#EACFDF', '#B565A7', '#D8BFD8', '#7B3F00']);
@@ -78,7 +77,6 @@ function MosaicChart({ data }) {
       const categoryData = data.filter(d => d.category === category);
       const widthFracTotal = (categoryTotal / total) * innerWidth;
 
-      // Restem padding horitzontal, excepte a l'última columna
       const widthFrac = widthFracTotal - (i < categoryTotals.length - 1 ? paddingX : 0);
 
       let yOffset = 0;
@@ -87,7 +85,6 @@ function MosaicChart({ data }) {
       categoryData.forEach((d, idx) => {
         const heightFracTotal = (d.value / categoryTotal) * innerHeight;
 
-        // Restem padding vertical excepte últim rectangle
         const heightFrac = heightFracTotal - (idx < categoryData.length - 1 ? paddingY : 0);
 
         categoryGroup.append('rect')
@@ -114,13 +111,13 @@ function MosaicChart({ data }) {
             setTooltip(t => ({ ...t, visible: false }));
           });
 
-        yOffset += heightFracTotal; // sumem la mida total (inclòs padding)
+        yOffset += heightFracTotal;
       });
 
-      xOffset += widthFracTotal; // sumem la mida total (inclòs padding)
+      xOffset += widthFracTotal;
     });
 
-    // Eix X
+ 
     g.append('line')
       .attr('x1', -5)
       .attr('y1', innerHeight + 5)

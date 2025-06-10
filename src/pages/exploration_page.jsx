@@ -27,13 +27,13 @@ function ExplorationPage({data}) {
               <SankeyChart data={data['sankey-depression1']} />
             </div>
             <div className="content-box">
-              <h3 className="chart-title">Del son a la depressió</h3>
+              <h3 className="chart-title">Incidència de depressió segons l’alimentació</h3>
               <MosaicChart data={data['mossaic1']} />
             </div>
         </div>
         <div className="vertical-layout">
             <div className="content-box">
-              <h3 className="chart-title">Incidència de depressió segons l’alimentació</h3>
+              <h3 className="chart-title">Del son a la depressió</h3>
               <SankeyChart data={data['sankey-depression2']} />
             </div>
             <div className="content-box">
