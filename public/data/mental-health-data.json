@@ -1,42 +1,109 @@
 {
-    "depression-rates": {
-        "Positius": "16336",
-        "Negatius": "11565"
-    },
-    "suicidal-thougths-rates": {
-        "Positius": "17656",
-        "Negatius": "10245"
-    },
-    "city-depression": {
-        "Kalyan": { "Positiu": "934", "Negatiu": "636", "coordinates": ["72.9781", "19.2403"] },
-        "Srinagar": { "Positiu": "763", "Negatiu": "609", "coordinates": ["74.7973", "34.0837"] },
-        "Hyderabad": { "Positiu": "897", "Negatiu": "443", "coordinates": ["78.4867", "17.3850"] },
-        "Vasai-Virar": { "Positiu": "739", "Negatiu": "551", "coordinates": ["72.8008", "19.3919"] },
-        "Lucknow": { "Positiu": "641", "Negatiu": "514", "coordinates": ["80.9462", "26.8467"] },
-        "Thane": { "Positiu": "673", "Negatiu": "466", "coordinates": ["72.9781", "19.2183"] },
-        "Ludhiana": { "Positiu": "647", "Negatiu": "464", "coordinates": ["75.8573", "30.9000"] },
-        "Agra": { "Positiu": "585", "Negatiu": "509", "coordinates": ["78.0081", "27.1767"] },
-        "Surat": { "Positiu": "625", "Negatiu": "453", "coordinates": ["72.8311", "21.1702"] },
-        "Kolkata": { "Positiu": "649", "Negatiu": "417", "coordinates": ["88.3639", "22.5726"] },
-        "Jaipur": { "Positiu": "543", "Negatiu": "493", "coordinates": ["75.7873", "26.9124"] },
-        "Patna": { "Positiu": "636", "Negatiu": "371", "coordinates": ["85.1376", "25.5941"] },
-        "Visakhapatnam": { "Positiu": "552", "Negatiu": "417", "coordinates": ["83.2185", "17.6868"] },
-        "Pune": { "Positiu": "541", "Negatiu": "427", "coordinates": ["73.8567", "18.5204"] },
-        "Ahmedabad": { "Positiu": "640", "Negatiu": "311", "coordinates": ["72.5714", "23.0225"] },
-        "Bhopal": { "Positiu": "579", "Negatiu": "355", "coordinates": ["77.4126", "23.2599"] },
-        "Chennai": { "Positiu": "528", "Negatiu": "357", "coordinates": ["80.2707", "13.0827"] },
-        "Meerut": { "Positiu": "493", "Negatiu": "332", "coordinates": ["77.7064", "28.9845"] },
-        "Rajkot": { "Positiu": "511", "Negatiu": "305", "coordinates": ["70.8022", "22.3039"] },
-        "Delhi": { "Positiu": "468", "Negatiu": "300", "coordinates": ["77.1025", "28.7041"] },
-        "Bangalore": { "Positiu": "467", "Negatiu": "300", "coordinates": ["77.5946", "12.9716"] },
-        "Ghaziabad": { "Positiu": "428", "Negatiu": "317", "coordinates": ["77.4538", "28.6692"] },
-        "Mumbai": { "Positiu": "386", "Negatiu": "313", "coordinates": ["72.8777", "19.0760"] },
-        "Vadodara": { "Positiu": "390", "Negatiu": "304", "coordinates": ["73.1812", "22.3072"] },
-        "Varanasi": { "Positiu": "364", "Negatiu": "321", "coordinates": ["83.0060", "25.3176"] },
-        "Nagpur": { "Positiu": "363", "Negatiu": "288", "coordinates": ["79.0882", "21.1458"] },
-        "Indore": { "Positiu": "389", "Negatiu": "254", "coordinates": ["75.8577", "22.7196"] },
-        "Kanpur": { "Positiu": "330", "Negatiu": "279", "coordinates": ["80.3319", "26.4499"] },
-        "Nashik": { "Positiu": "289", "Negatiu": "258", "coordinates": ["73.7898", "19.9975"] },
-        "Faridabad": { "Positiu": "271", "Negatiu": "190", "coordinates": ["77.3178", "28.4089"] }
-    }
+  "depression-rates": {
+    "Positius": "16319",
+    "Negatius": "11552"
+  },
+  "suicidal-thougths-rates": {
+    "Positius": "17635",
+    "Negatius": "10236"
+  },
+  "city-depression": {
+    "Kalyan": { "Positiu": "934", "Negatiu": "636", "coordinates": ["72.9781", "19.2403"] },
+    "Srinagar": { "Positiu": "763", "Negatiu": "609", "coordinates": ["74.7973", "34.0837"] },
+    "Hyderabad": { "Positiu": "897", "Negatiu": "443", "coordinates": ["78.4867", "17.3850"] },
+    "Vasai-Virar": { "Positiu": "739", "Negatiu": "551", "coordinates": ["72.8008", "19.3919"] },
+    "Lucknow": { "Positiu": "641", "Negatiu": "514", "coordinates": ["80.9462", "26.8467"] },
+    "Thane": { "Positiu": "673", "Negatiu": "466", "coordinates": ["72.9781", "19.2183"] },
+    "Ludhiana": { "Positiu": "647", "Negatiu": "464", "coordinates": ["75.8573", "30.9000"] },
+    "Agra": { "Positiu": "585", "Negatiu": "509", "coordinates": ["78.0081", "27.1767"] },
+    "Surat": { "Positiu": "625", "Negatiu": "453", "coordinates": ["72.8311", "21.1702"] },
+    "Kolkata": { "Positiu": "649", "Negatiu": "417", "coordinates": ["88.3639", "22.5726"] },
+    "Jaipur": { "Positiu": "543", "Negatiu": "493", "coordinates": ["75.7873", "26.9124"] },
+    "Patna": { "Positiu": "636", "Negatiu": "371", "coordinates": ["85.1376", "25.5941"] },
+    "Visakhapatnam": { "Positiu": "552", "Negatiu": "417", "coordinates": ["83.2185", "17.6868"] },
+    "Pune": { "Positiu": "541", "Negatiu": "427", "coordinates": ["73.8567", "18.5204"] },
+    "Ahmedabad": { "Positiu": "640", "Negatiu": "311", "coordinates": ["72.5714", "23.0225"] },
+    "Bhopal": { "Positiu": "579", "Negatiu": "355", "coordinates": ["77.4126", "23.2599"] },
+    "Chennai": { "Positiu": "528", "Negatiu": "357", "coordinates": ["80.2707", "13.0827"] },
+    "Meerut": { "Positiu": "493", "Negatiu": "332", "coordinates": ["77.7064", "28.9845"] },
+    "Rajkot": { "Positiu": "511", "Negatiu": "305", "coordinates": ["70.8022", "22.3039"] },
+    "Delhi": { "Positiu": "468", "Negatiu": "300", "coordinates": ["77.1025", "28.7041"] },
+    "Bangalore": { "Positiu": "467", "Negatiu": "300", "coordinates": ["77.5946", "12.9716"] },
+    "Ghaziabad": { "Positiu": "428", "Negatiu": "317", "coordinates": ["77.4538", "28.6692"] },
+    "Mumbai": { "Positiu": "386", "Negatiu": "313", "coordinates": ["72.8777", "19.0760"] },
+    "Vadodara": { "Positiu": "390", "Negatiu": "304", "coordinates": ["73.1812", "22.3072"] },
+    "Varanasi": { "Positiu": "364", "Negatiu": "321", "coordinates": ["83.0060", "25.3176"] },
+    "Nagpur": { "Positiu": "363", "Negatiu": "288", "coordinates": ["79.0882", "21.1458"] },
+    "Indore": { "Positiu": "389", "Negatiu": "254", "coordinates": ["75.8577", "22.7196"] },
+    "Kanpur": { "Positiu": "330", "Negatiu": "279", "coordinates": ["80.3319", "26.4499"] },
+    "Nashik": { "Positiu": "289", "Negatiu": "258", "coordinates": ["73.7898", "19.9975"] },
+    "Faridabad": { "Positiu": "271", "Negatiu": "190", "coordinates": ["77.3178", "28.4089"] }
+  },
+  "sankey-depression1": {
+    "nodes": [
+      { "name": "Salutables" },
+      { "name": "Moderats" },
+      { "name": "No saludables" },
+      { "name": "Pensaments suïcides" },
+      { "name": "Sense pensaments suïcides" },
+      { "name": "Depressió" },
+      { "name": "Sense depressió" }
+    ],
+    "links": [
+      { "source": 0, "target": 4, "value": 3356 },
+      { "source": 0, "target": 3, "value": 4285 },
+      { "source": 1, "target": 4, "value": 3745 },
+      { "source": 1, "target": 3, "value": 6163 },
+      { "source": 2, "target": 4, "value": 3125 },
+      { "source": 2, "target": 3, "value": 7171 },
+      { "source": 4, "target": 6, "value": 7852 },
+      { "source": 4, "target": 5, "value": 2374 },
+      { "source": 3, "target": 6, "value": 3689 },
+      { "source": 3, "target": 5, "value": 13930 }
+    ]
+  },
+  "sankey-depression2": {
+    "nodes": [
+      { "name": "Més de 8 hores" },
+      { "name": "7-8 hores" },
+      { "name": "5-6 hores" },
+      { "name": "Menys de 5 hores" },
+      { "name": "Pensaments suïcides" },
+      { "name": "Sense pensaments suïcides" },
+      { "name": "Depressió" },
+      { "name": "Sense depressió" }
+    ],
+    "links": [
+      { "source": 2, "target": 5, "value": 2344 },
+      { "source": 2, "target": 4, "value": 3830 },
+      { "source": 1, "target": 5, "value": 2567 },
+      { "source": 1, "target": 4, "value": 4766 },
+      { "source": 3, "target": 5, "value": 2766 },
+      { "source": 3, "target": 4, "value": 5532 },
+      { "source": 0, "target": 5, "value": 2549 },
+      { "source": 0, "target": 4, "value": 3491 },
+      { "source": 5, "target": 6, "value": 2374 },
+      { "source": 5, "target": 7, "value": 7852 },
+      { "source": 4, "target": 7, "value": 3689 },
+      { "source": 4, "target": 6, "value": 13930 }
+    ]
+  },
+  "mossaic1": [
+    { "category": "Salutables", "subcategory": "Sense depressió", "value": 4173 },
+    { "category": "Salutables", "subcategory": "Depressió", "value": 3468 },
+    { "category": "Moderats", "subcategory": "Sense depressió", "value": 4356 },
+    { "category": "Moderats", "subcategory": "Depressió", "value": 5552 },
+    { "category": "No saludables", "subcategory": "Sense depressió", "value": 3012 },
+    { "category": "No saludables", "subcategory": "Depressió", "value": 7284 }
+  ],
+  "mossaic2": [
+    { "category": "Menys de 5 hores", "subcategory": "Sense depressió", "value": 2944 },
+    { "category": "Menys de 5 hores", "subcategory": "Depressió", "value": 5354 },
+    { "category": "5-6 hores", "subcategory": "Sense depressió", "value": 2664 },
+    { "category": "5-6 hores", "subcategory": "Depressió", "value": 3510 },
+    { "category": "7-8 hores", "subcategory": "Sense depressió", "value": 2968 },
+    { "category": "7-8 hores", "subcategory": "Depressió", "value": 4365 },
+    { "category": "Més de 8 hores", "subcategory": "Sense depressió", "value": 2965 },
+    { "category": "Més de 8 hores", "subcategory": "Depressió", "value": 3075 }
+  ]
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/dropdown.css'
 
 function DropdownMenu() {
@@ -12,9 +13,8 @@ function DropdownMenu() {
 
       {open && (
         <div className="dropdown-content">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <Link to="/mental-health-care/overview" onClick={() => setOpen(false)}>Resum</Link>
+          <Link to="/mental-health-care/healthy-habits" onClick={() => setOpen(false)}>Hàbits Saludables</Link>
         </div>
       )}
     </div>
